@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+      {
+        "source": "/Build/:path*",
+        "destination": "/public/Build/:path*"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/Build/:path*",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ]
+  }
+  
